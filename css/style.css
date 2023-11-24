@@ -1,4 +1,22 @@
 /********** Template CSS **********/
+.border-primary {
+    border: 2px solid #D81324; /* Warna biru sesuai dengan warna primary Bootstrap */
+    border-radius: 10px; /* Membuat sudut-sudut kotak lebih lembut */
+    overflow: hidden; /* Memastikan elemen tidak melebihi batas kotak */
+}
+/* Untuk layar yang lebih besar dari 768 piksel (tablet dan desktop standar) */
+@media (min-width: 768px) {
+    .footer {
+        height: 60vh;
+    }
+}
+
+/* Untuk layar yang lebih kecil dari 768 piksel (ponsel) */
+@media (max-width: 767px) {
+    .footer {
+        height: auto; /* Atau tinggi yang sesuai untuk tampilan ponsel Anda */
+    }
+}
 #blog .blog-img .box7 {
     box-shadow: none;
     border-radius: 6px;
